@@ -1,0 +1,122 @@
+html {
+  background-image: url("https://i.pinimg.com/originals/e0/d3/1a/e0d31ad8a73edddb23573374f68c3a84.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  
+}
+
+body {
+  position: relative;
+  min-width: 100vh;
+  margin: 0;
+  height: 100%;
+  display: grid;
+  user-select: none;
+}
+
+#calc {
+  display: grid;
+  place-items: center;
+}
+
+.calculator {
+  height: 460px;
+  width: 220px;
+  background-color: #ffffffbd;
+
+  
+  border-radius: 10px;
+  display: grid;
+  position:absolute;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3px;
+  padding: 10px;
+  
+}
+
+.result {
+  background: rgb(119, 174, 230); 
+  color: rgb(62, 17, 134); 
+  font-family: 'Times New Roman', Times, serif; 
+
+  border-radius: 10px;
+  grid-column: span 4 / span 4; 
+  height: 55px;
+  display: grid;
+  text-align: right;
+  font-size: 1.5rem;
+  font-weight: 900;
+  padding: 5px;
+  
+}
+
+.my-btn {
+  width: 50px;                 
+  height: 50px; 
+  display: grid;
+  place-items: center;
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+  background: rgb(119, 174, 230);         
+  color: rgb(62, 17, 134); 
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 5%;
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.dark1 .result {
+  background: #3d63a9;
+}
+
+.dark .calculator {
+  background: rgb(8, 37, 67);
+}
+
+.my-btn:hover {
+  background: rgb(71, 143, 215); 
+}
+
+.my-btn:active {
+  filter: brightness(130%);
+}
+
+.my-btn.primary { 
+  background: #3d63a9;
+}
+
+.my-btn.secondary { 
+  background: #008080; 
+}
+
+#text {
+  position: absolute; 
+  bottom: 0; 
+  width:100%; 
+  text-align: center;
+  color:rgb(223, 223, 223);
+}
+
+#text1 {
+  color:rgb(223, 223, 223);
+  position:absolute;
+  margin-top: 10px;
+}
+
+#text1 mark {
+  background-color:rgb(119, 174, 230);
+  color:rgb(223, 223, 223);
+
+}
+
+#text2 {
+  position: absolute; 
+  bottom:180px;
+  margin-bottom: 250px;
+  color:rgb(223, 223, 223);
+  background: rgb(119, 174, 230);
+}
