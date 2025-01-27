@@ -156,20 +156,13 @@ window.onload = function(){
     document.getElementById('btn_factorial').onclick = function() {
         if (a !== '')
         {
-            if (a <= 9999999){
+            if (a <= 19){
                     expressionResult = 1;
                 for (var i = 2; i <= a; i++) {
                     expressionResult *= i
                 }
-                if (expressionResult === Infinity)
-                {
-                    outputElement.innerHTML = expressionResult
-                    a = ''
-                }
-                else {
-                    a = expressionResult
-                    outputElement.innerHTML = a
-                }
+                a = expressionResult
+                outputElement.innerHTML = a
             }
             else {
                 outputElement.innerHTML = "Infinity"
