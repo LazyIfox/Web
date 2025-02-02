@@ -27,8 +27,6 @@ export class ProductCardComponent {
                     <select id="sort-select">
                         <option value="id_asc">По ID возрастание</option>
                         <option value="id_desc">По ID убывание</option>
-                        <option value="time_asc">По времени вступления (возрастание)</option>
-                        <option value="time_desc">По времени вступления (убывание)</option>
                     </select>
                 </div>
             `

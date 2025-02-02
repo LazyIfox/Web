@@ -30,9 +30,23 @@ getHTML() {
                 <div id="sort-container" class="d-inline-block p-2 mb-3"></div>
                 ${this.state === 'cards' ? `
                 <form id="add-card-form">
-                    <button type="submit" class="btn btn-primary" style="margin-top: 25px;">
-                        Добавить карточку
-                    </button>
+                    <div class="mb-3">
+                        <label for="id" class="form-label">ID</label>
+                        <input type="number" class="form-control" id="id" name="id" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="photo_400_orig" class="form-label">Изображение (URL)</label>
+                        <input type="text" class="form-control" id="photo_400_orig" name="photo_400_orig" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="first_name" class="form-label">Имя</label>
+                        <input type="text" class="form-control" id="first_name" name="first_name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="last_name" class="form-label">Фамилия</label>
+                        <input type="text" class="form-control" id="last_name" name="last_name" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Добавить</button>
                 </form>
                 ` : ''}
             </div>
@@ -41,14 +55,23 @@ getHTML() {
 }
 
 async fetchData2() {
-    const url = `http://localhost:8000/api/group-members?sort=${this.sort}`;
+    const url = `http://localhost:8000/api/group-members`;
     try {
         const data = await fetchData(url);
-        this.items = data;
+        this.items = this.sortItems(data);
         this.renderData(this.items);
     } catch (error) {
         console.error('Ошибка:', error);
     }
+}
+
+sortItems(items) {
+    if (this.sort === 'id_asc') {
+        return items.sort((a, b) => a.id - b.id);
+    } else if (this.sort === 'id_desc') {
+        return items.sort((a, b) => b.id - a.id);
+    }
+    return items;
 }
 
 renderData(items) {
@@ -90,13 +113,26 @@ async deleteCard(e) {
 
 async addCard(e) {
     e.preventDefault();
-    if (this.deletedCards.length > 0) {
-        const lastDeletedCard = this.deletedCards.pop();
-        this.items.push(lastDeletedCard);
-        this.renderData(this.items);
-    }
-    else {
-        console.log('Все карточки уже добавлены');
+    const form = e.target;
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+    data.id = parseInt(data.id, 10);
+
+    try {
+        const response = await fetch('http://localhost:8000/api/group-members', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+        });
+        if (!response.ok) {
+            const errorMessage = await response.text();
+            throw new Error(errorMessage);
+        }
+        this.render();
+    } catch (error) {
+        console.error(error);
     }
 }
 

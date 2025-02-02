@@ -20,6 +20,7 @@ export class ProductComponent {
                     <div class="col-md-8">
                         <div class="card-body">
                             <h5 class="card-title">${data.first_name} ${data.last_name}</h5>
+                            <p class="card-text">ID: ${data.id}</p>
                             <button id="back-button" class="btn btn-primary" type="button">Назад</button>
                         </div>
                     </div>
