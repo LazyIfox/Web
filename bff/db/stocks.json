@@ -1,0 +1,50 @@
+[
+  {
+    "id": 166466418,
+    "photo_400_orig": "https://sun33-1.userapi.com/s/v1/ig2/dv9xYVxqWhIfgTv7kz7hhAjmRd_lUZ6CyE9tEy7Q5QBLgKBpCD_u_Yj8M1_OA6UOGhWuO6Bm9wkMHR7iLvrT7VBw.jpg?quality=95&crop=395,747,1217,1217&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720,1080x1080&ava=1&cs=240x240",
+    "first_name": "Денис",
+    "last_name": "Шелепов",
+    "can_access_closed": true,
+    "is_closed": false
+  },
+  {
+    "id": 419823097,
+    "photo_400_orig": "https://sun33-2.userapi.com/s/v1/ig2/mgfb_byP758WchGAAMoZHnY8fDti1wxUANsZ6ku7ahgQayCem0mOq8iWqtnqGVSINFSawjANqkfVUUFGZOgyPZMH.jpg?quality=95&crop=729,0,804,804&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720&ava=1&cs=240x240",
+    "first_name": "Михаил",
+    "last_name": "Александров",
+    "can_access_closed": true,
+    "is_closed": false
+  },
+  {
+    "id": 427313053,
+    "photo_400_orig": "https://sun33-1.userapi.com/s/v1/ig2/WIVXffVAuvoPIgnuZYYCChAiDeuFfIKTHj_89Vk3A7SA5KZlncPKoc9l3iX8eRF4LQxtgKSvPLT5rrOE5iLyRLP-.jpg?quality=95&crop=33,4,1305,1305&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720,1080x1080,1280x1280&ava=1&cs=240x240",
+    "first_name": "Роман",
+    "last_name": "Хром",
+    "can_access_closed": true,
+    "is_closed": false
+  },
+  {
+    "id": 458158643,
+    "photo_400_orig": "https://sun33-1.userapi.com/s/v1/ig2/6kiDXtsf_KGMxCKyi_3PNxGAhW06f_OpyW8Fzt21ktNX2jBM_cZSn7USVKLScvOZCqcqztC3O1Q2yHcftg5GDf0X.jpg?quality=95&crop=0,0,680,680&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640&ava=1&cs=240x240",
+    "first_name": "Андрей",
+    "last_name": "Логачев",
+    "can_access_closed": true,
+    "is_closed": false
+  },
+  {
+    "id": 548950281,
+    "photo_400_orig": "https://sun33-2.userapi.com/s/v1/ig2/FnT5EGxA3ImzM9CXMsFAGVzspQ7sg3t1XwGrHF9bxPpslbV3FpRfZxIQOt82rsLre2OQvKe3w1UkcZMPDN6z4Rhm.jpg?quality=95&crop=191,0,1075,1075&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720&ava=1&cs=240x240",
+    "first_name": "Илья",
+    "last_name": "Захаров",
+    "can_access_closed": true,
+    "is_closed": false
+  },
+  {
+    "id": 668851232,
+    "photo_400_orig": "https://sun33-1.userapi.com/s/v1/ig2/zdcMupWPTwd20YFaTByfvLJUdV9zlFEMVUQb9AqogZBC2PSdvChhd46eqN5xTw0_m7bLkukq5-LB3UxQaU-BO5W1.jpg?quality=95&crop=17,32,861,861&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720&ava=1&cs=240x240",
+    "first_name": "Влада",
+    "last_name": "Сологубова",
+    "can_access_closed": true,
+    "is_closed": true
+  }
+]
